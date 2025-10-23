@@ -1,0 +1,1058 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Green Horizon Foundation</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Green Horizon Foundation - Page CSS */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  margin-bottom: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-placeholder {
+  font-size: 8rem;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+  transform: translateY(-2px);
+}
+
+.impact-snapshot {
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.impact-snapshot h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border-radius: 1rem;
+  border: 1px solid #dcfce7;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.featured-projects {
+  padding: 4rem 2rem;
+  background-color: white;
+  margin-bottom: 4rem;
+}
+
+.featured-projects h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  padding: 2rem;
+  background: white;
+  border: 2px solid #dcfce7;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: #16a34a;
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.15);
+  transform: translateY(-4px);
+}
+
+.project-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.card-link {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  color: #15803d;
+  text-decoration: underline;
+}
+
+.projects-cta {
+  text-align: center;
+}
+
+.community-voices {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  margin-bottom: 4rem;
+}
+
+.community-voices h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  background: white;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.testimonial footer {
+  color: #4b5563;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.testimonial cite {
+  color: #16a34a;
+  font-style: normal;
+}
+
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0 2rem 4rem;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #f0fdf4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn-secondary {
+  color: white;
+  border-color: white;
+}
+
+.cta-section .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-placeholder {
+    font-size: 6rem;
+  }
+
+  .impact-snapshot h2,
+  .featured-projects h2,
+  .community-voices h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-ctas,
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  margin-bottom: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-placeholder {
+  font-size: 8rem;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+  transform: translateY(-2px);
+}
+
+.impact-snapshot {
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.impact-snapshot h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border-radius: 1rem;
+  border: 1px solid #dcfce7;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.featured-projects {
+  padding: 4rem 2rem;
+  background-color: white;
+  margin-bottom: 4rem;
+}
+
+.featured-projects h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  padding: 2rem;
+  background: white;
+  border: 2px solid #dcfce7;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: #16a34a;
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.15);
+  transform: translateY(-4px);
+}
+
+.project-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.card-link {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  color: #15803d;
+  text-decoration: underline;
+}
+
+.projects-cta {
+  text-align: center;
+}
+
+.community-voices {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  margin-bottom: 4rem;
+}
+
+.community-voices h2 {
+  font-size: 2.5rem;
+  color: #166534;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  background: white;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.testimonial footer {
+  color: #4b5563;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.testimonial cite {
+  color: #16a34a;
+  font-style: normal;
+}
+
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0 2rem 4rem;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #f0fdf4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn-secondary {
+  color: white;
+  border-color: white;
+}
+
+.cta-section .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-placeholder {
+    font-size: 6rem;
+  }
+
+  .impact-snapshot h2,
+  .featured-projects h2,
+  .community-voices h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-ctas,
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><section class="hero">
+  <div class="hero-content">
+    <h1>Climate Action Starts Here</h1>
+    <p class="hero-subtitle">Green Horizon Foundation mobilizes communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+    <div class="hero-ctas">
+      <a href="/greenhorizon-main/get-involved" class="btn btn-primary">Get Involved Now</a>
+      <a href="/greenhorizon-main/projects" class="btn btn-secondary">Explore Projects</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-placeholder">🌱</div>
+  </div>
+</section>
+
+<section class="impact-snapshot">
+  <h2>Our Impact Since 2018</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">247</div>
+      <div class="stat-label">Communities Mobilized</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">1,200+</div>
+      <div class="stat-label">Climate Projects Launched</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">Thousands</div>
+      <div class="stat-label">Lives Empowered</div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects">
+  <h2>Featured Projects Making a Difference</h2>
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-icon">🌻</div>
+      <h3>Urban Gardens & Food Justice</h3>
+      <p>Converting vacant lots into thriving community gardens that grow food, build relationships, and strengthen neighborhoods.</p>
+      <a href="/greenhorizon-main/projects" class="card-link">Learn More →</a>
+    </article>
+    <article class="project-card">
+      <div class="project-icon">☀️</div>
+      <h3>Solar Co-ops & Clean Energy</h3>
+      <p>Making renewable energy accessible through shared solar installations that reduce energy costs and emissions together.</p>
+      <a href="/greenhorizon-main/projects" class="card-link">Learn More →</a>
+    </article>
+    <article class="project-card">
+      <div class="project-icon">💧</div>
+      <h3>Watershed Restoration</h3>
+      <p>Protecting water systems and ecosystems through community-led restoration projects that heal landscapes and communities.</p>
+      <a href="/greenhorizon-main/projects" class="card-link">Learn More →</a>
+    </article>
+  </div>
+  <div class="projects-cta">
+    <a href="/greenhorizon-main/projects" class="btn btn-primary">View All Projects</a>
+  </div>
+</section>
+
+<section class="community-voices">
+  <h2>Stories from Our Communities</h2>
+  <div class="testimonials">
+    <blockquote class="testimonial">
+      <p>"Green Horizon didn't just give us a grant—they gave us confidence. Now our neighborhood has a thriving tool library and repair cafe."</p>
+      <footer>— Jerome Williams, <cite>Detroit Tool Share</cite></footer>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p>"They met us where we were. No jargon, no judgment, just genuine support for our community solar project."</p>
+      <footer>— Luz Hernandez, <cite>Phoenix Rising Co-op</cite></footer>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p>"Five years ago, I didn't know where to start. Green Horizon's training program turned me into a climate organizer. Now I'm helping other neighborhoods do the same."</p>
+      <footer>— Aisha Patel, <cite>Oakland Community Climate Hub</cite></footer>
+    </blockquote>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Ready to Lead Climate Action in Your Community?</h2>
+  <p>Whether you're an individual looking to make an impact or a community organizer ready to mobilize neighbors, we're here to support you.</p>
+  <div class="cta-buttons">
+    <a href="/greenhorizon-main/get-involved" class="btn btn-primary">Start Your Journey</a>
+    <a href="/greenhorizon-main/contact" class="btn btn-secondary">Get in Touch</a>
+  </div>
+</section><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
