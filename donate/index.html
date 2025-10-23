@@ -1,0 +1,1640 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Donate</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Donate - Page CSS */
+.donate-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.donate-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+.hero-content h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #dcfce7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Donation Container */
+.donation-container {
+  padding: 0 2rem 4rem;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.donation-form-section h2 {
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.donation-form {
+  background: white;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #166534;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.amount-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.amount-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #166534;
+}
+
+.amount-btn input[type="radio"] {
+  display: none;
+}
+
+.amount-btn input[type="radio"]:checked + span,
+.amount-btn:has(input:checked) {
+  background-color: #16a34a;
+  color: white;
+  border-color: #15803d;
+}
+
+.amount-btn:hover:not(:has(input:checked)) {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+.amount-custom {
+  grid-column: span 3;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.amount-custom input[type="radio"] {
+  display: block;
+  margin: 0;
+}
+
+.amount-custom input[type="number"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.giving-type,
+.fund-allocation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.giving-type label,
+.fund-allocation label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.75rem;
+}
+
+.giving-type input[type="radio"],
+.fund-allocation input[type="radio"],
+.gift-designation input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #16a34a;
+}
+
+.giving-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-left: 3px solid #16a34a;
+  font-size: 0.95rem;
+  color: #15803d;
+}
+
+.gift-designation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#honorDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+#honorDetails.hidden {
+  display: none;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.form-note {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Info Cards Section */
+.donation-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.1);
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.impact-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.impact-item {
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 0.375rem;
+  border-left: 3px solid #16a34a;
+}
+
+.impact-amount {
+  display: block;
+  font-weight: 700;
+  color: #166534;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.impact-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #15803d;
+}
+
+.fund-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.breakdown-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  border-radius: 4px;
+}
+
+.breakdown-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.tax-card p {
+  font-size: 0.95rem;
+}
+
+.faq-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-card ul li a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+/* Giving Options Section */
+.giving-options {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+  border-radius: 0.5rem;
+}
+
+.options-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.giving-options h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.option-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+  border-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.option-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.option-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Donor Stories Section */
+.donor-stories {
+  padding: 4rem 2rem;
+}
+
+.stories-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.donor-stories h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.story-quote {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.story-author {
+  font-weight: 600;
+  color: #166534;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 4rem 2rem;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: #dcfce7;
+  margin-bottom: 1.5rem;
+}
+
+.cta-secondary {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cta-secondary a {
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+.cta-secondary a:hover {
+  color: white;
+}
+
+/* Button Utilities */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amount-custom {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.875rem;
+  }
+
+  .donation-container {
+    padding: 0 1.5rem 2rem;
+  }
+
+  .amount-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amount-custom {
+    grid-column: span 2;
+    flex-direction: column;
+  }
+
+  .options-grid,
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    margin: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .giving-options {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .donor-stories {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .donation-container {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .amount-options {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-custom {
+    grid-column: span 1;
+  }
+
+  .amount-btn {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .donation-info-section {
+    gap: 1rem;
+  }
+}.donate-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.donate-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+.hero-content h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #dcfce7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Donation Container */
+.donation-container {
+  padding: 0 2rem 4rem;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.donation-form-section h2 {
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.donation-form {
+  background: white;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #166534;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.amount-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.amount-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #166534;
+}
+
+.amount-btn input[type="radio"] {
+  display: none;
+}
+
+.amount-btn input[type="radio"]:checked + span,
+.amount-btn:has(input:checked) {
+  background-color: #16a34a;
+  color: white;
+  border-color: #15803d;
+}
+
+.amount-btn:hover:not(:has(input:checked)) {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+.amount-custom {
+  grid-column: span 3;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.amount-custom input[type="radio"] {
+  display: block;
+  margin: 0;
+}
+
+.amount-custom input[type="number"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.giving-type,
+.fund-allocation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.giving-type label,
+.fund-allocation label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.75rem;
+}
+
+.giving-type input[type="radio"],
+.fund-allocation input[type="radio"],
+.gift-designation input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #16a34a;
+}
+
+.giving-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-left: 3px solid #16a34a;
+  font-size: 0.95rem;
+  color: #15803d;
+}
+
+.gift-designation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#honorDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+#honorDetails.hidden {
+  display: none;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.form-note {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Info Cards Section */
+.donation-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.1);
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.impact-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.impact-item {
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 0.375rem;
+  border-left: 3px solid #16a34a;
+}
+
+.impact-amount {
+  display: block;
+  font-weight: 700;
+  color: #166534;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.impact-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #15803d;
+}
+
+.fund-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.breakdown-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  border-radius: 4px;
+}
+
+.breakdown-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.tax-card p {
+  font-size: 0.95rem;
+}
+
+.faq-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-card ul li a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+/* Giving Options Section */
+.giving-options {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+  border-radius: 0.5rem;
+}
+
+.options-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.giving-options h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.option-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+  border-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.option-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.option-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Donor Stories Section */
+.donor-stories {
+  padding: 4rem 2rem;
+}
+
+.stories-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.donor-stories h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.story-quote {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.story-author {
+  font-weight: 600;
+  color: #166534;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 4rem 2rem;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: #dcfce7;
+  margin-bottom: 1.5rem;
+}
+
+.cta-secondary {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cta-secondary a {
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+.cta-secondary a:hover {
+  color: white;
+}
+
+/* Button Utilities */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amount-custom {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.875rem;
+  }
+
+  .donation-container {
+    padding: 0 1.5rem 2rem;
+  }
+
+  .amount-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amount-custom {
+    grid-column: span 2;
+    flex-direction: column;
+  }
+
+  .options-grid,
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    margin: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .giving-options {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .donor-stories {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .donation-container {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .amount-options {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-custom {
+    grid-column: span 1;
+  }
+
+  .amount-btn {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .donation-info-section {
+    gap: 1rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><main class="donate-page">
+  <section class="donate-hero">
+    <div class="hero-content">
+      <h1>Make Your Impact Today</h1>
+      <p class="hero-subtitle">Every donation funds real climate action in communities that need it most. Your generosity empowers local projects, education, and policy change.</p>
+    </div>
+  </section>
+
+  <section class="donation-container">
+    <div class="donation-grid">
+      <div class="donation-form-section">
+        <h2>Choose Your Donation</h2>
+        
+        <form class="donation-form" id="donationForm">
+          <fieldset>
+            <legend>Donation Amount</legend>
+            <div class="amount-options">
+              <label class="amount-btn">
+                <input type="radio" name="amount" value="25" />
+                <span>$25</span>
+              </label>
+              <label class="amount-btn">
+                <input type="radio" name="amount" value="50" />
+                <span>$50</span>
+              </label>
+              <label class="amount-btn">
+                <input type="radio" name="amount" value="100" />
+                <span>$100</span>
+              </label>
+              <label class="amount-btn">
+                <input type="radio" name="amount" value="250" />
+                <span>$250</span>
+              </label>
+              <label class="amount-btn">
+                <input type="radio" name="amount" value="500" />
+                <span>$500</span>
+              </label>
+              <label class="amount-custom">
+                <input type="radio" name="amount" value="custom" />
+                <input type="number" id="customAmount" placeholder="Other amount" min="1" step="0.01" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Giving Type</legend>
+            <div class="giving-type">
+              <label>
+                <input type="radio" name="givingType" value="one-time" checked />
+                <span>One-Time Donation</span>
+              </label>
+              <label>
+                <input type="radio" name="givingType" value="monthly" />
+                <span>Monthly Recurring</span>
+              </label>
+            </div>
+            <p class="giving-note">💚 Monthly donors power consistent community impact and help us plan long-term projects.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Fund Allocation (Optional)</legend>
+            <div class="fund-allocation">
+              <label>
+                <input type="radio" name="fundAllocation" value="unrestricted" checked />
+                <span>Unrestricted (greatest need)</span>
+              </label>
+              <label>
+                <input type="radio" name="fundAllocation" value="local-projects" />
+                <span>Local Climate Projects</span>
+              </label>
+              <label>
+                <input type="radio" name="fundAllocation" value="education" />
+                <span>Climate Education</span>
+              </label>
+              <label>
+                <input type="radio" name="fundAllocation" value="policy" />
+                <span>Policy Advocacy</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Gift Designation (Optional)</legend>
+            <div class="gift-designation">
+              <label>
+                <input type="checkbox" name="giftDesignation" value="honor" />
+                <span>Honor someone special</span>
+              </label>
+              <div id="honorDetails" class="hidden">
+                <input type="text" placeholder="Name to honor" class="form-input" />
+                <input type="email" placeholder="Notification email (optional)" class="form-input" />
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary btn-large">Proceed to Checkout</button>
+          <p class="form-note">🔒 Secure, encrypted payment. We never share your information.</p>
+        </form>
+      </div>
+
+      <div class="donation-info-section">
+        <div class="info-card impact-card">
+          <h3>Your Impact</h3>
+          <div class="impact-examples">
+            <div class="impact-item">
+              <span class="impact-amount">$25</span>
+              <p>Supplies 5 families with drought-resistant seeds</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$50</span>
+              <p>Funds carbon footprint education for 20 students</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$100</span>
+              <p>Plants 50 native trees in community spaces</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$250</span>
+              <p>Supports one month of community solar program</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card transparency-card">
+          <h3>Transparency</h3>
+          <p>We believe in radical honesty about how funds are used.</p>
+          <div class="fund-breakdown">
+            <div class="breakdown-item">
+              <div class="breakdown-bar" style="width: 75%;"></div>
+              <p><strong>75%</strong> Program Work</p>
+            </div>
+            <div class="breakdown-item">
+              <div class="breakdown-bar" style="width: 15%;"></div>
+              <p><strong>15%</strong> Administration</p>
+            </div>
+            <div class="breakdown-item">
+              <div class="breakdown-bar" style="width: 10%;"></div>
+              <p><strong>10%</strong> Fundraising</p>
+            </div>
+          </div>
+          <a href="/greenhorizon-main/transparency" class="link-arrow">View Full Financial Reports →</a>
+        </div>
+
+        <div class="info-card tax-card">
+          <h3>Tax Benefits</h3>
+          <p>Green Horizon Foundation is a 501(c)(3) nonprofit organization. Your donation is tax-deductible to the extent allowed by law.</p>
+          <p><strong>EIN:</strong> 12-3456789</p>
+          <p>A receipt will be emailed to you immediately.</p>
+        </div>
+
+        <div class="info-card faq-card">
+          <h3>Have Questions?</h3>
+          <p>Learn more about our giving options and impact.</p>
+          <ul>
+            <li><a href="#faq-recurring">Why give monthly?</a></li>
+            <li><a href="#faq-fund">How do you use funds?</a></li>
+            <li><a href="#faq-legacy">Legacy giving</a></li>
+            <li><a href="/greenhorizon-main/contact">Contact our team</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="giving-options">
+    <div class="options-container">
+      <h2>Ways to Give</h2>
+      <div class="options-grid">
+        <div class="option-card">
+          <h3>💳 Online</h3>
+          <p>Secure credit card, debit, or digital wallet donations.</p>
+        </div>
+        <div class="option-card">
+          <h3>🏦 Bank Transfer</h3>
+          <p>Direct ACH transfer or wire. <a href="/greenhorizon-main/contact">Contact us for details</a>.</p>
+        </div>
+        <div class="option-card">
+          <h3>📧 Stock Donation</h3>
+          <p>Donate appreciated securities. Tax benefits may apply. <a href="/greenhorizon-main/contact">Learn more</a>.</p>
+        </div>
+        <div class="option-card">
+          <h3>👥 Corporate Matching</h3>
+          <p>Many employers match employee donations. Check with your HR.</p>
+        </div>
+        <div class="option-card">
+          <h3>💝 Donor-Advised Funds</h3>
+          <p>Give through your DAF account. We're qualified to receive grants.</p>
+        </div>
+        <div class="option-card">
+          <h3>🎁 Legacy Giving</h3>
+          <p>Remember Green Horizon in your will or estate plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="donor-stories">
+    <div class="stories-container">
+      <h2>Why Supporters Give</h2>
+      <div class="stories-grid">
+        <div class="story-card">
+          <p class="story-quote">"I give monthly because I want to see lasting change in my community. The transparency shows exactly where my money goes."</p>
+          <p class="story-author">— Maria, Climate Advocate</p>
+        </div>
+        <div class="story-card">
+          <p class="story-quote">"Supporting local climate projects feels so much more impactful than abstract environmental causes. I can see the trees being planted."</p>
+          <p class="story-author">— James, Community Member</p>
+        </div>
+        <div class="story-card">
+          <p class="story-quote">"Green Horizon's education program inspired my kids to take climate action. I donate to multiply that impact across more families."</p>
+          <p class="story-author">— Dr. Patel, Parent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to Make a Difference?</h2>
+      <p>Join thousands of climate advocates supporting real action in communities.</p>
+      <button class="btn btn-primary btn-large">Donate Now</button>
+      <p class="cta-secondary">Or <a href="/greenhorizon-main/get-involved">get involved in other ways →</a></p>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
