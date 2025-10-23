@@ -1,0 +1,1353 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Climate Education</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Climate Education - Page CSS */
+/* Education Page Specific Styles */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.education-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-hero h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #dcfce7;
+  margin-bottom: 0;
+}
+
+/* Intro Section */
+.education-intro {
+  padding: 3rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.intro-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #1f2937;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Resources Grid */
+.resources-grid {
+  padding: 4rem 2rem;
+}
+
+.resources-grid h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card:hover {
+  box-shadow: 0 10px 25px rgba(22, 101, 52, 0.1);
+  border-color: #16a34a;
+  transform: translateY(-4px);
+}
+
+.resource-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.resource-card p {
+  flex-grow: 1;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.resource-link {
+  display: inline-block;
+  color: #16a34a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #15803d;
+  transform: translateX(4px);
+}
+
+/* Webinars Section */
+.upcoming-webinars {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+}
+
+.upcoming-webinars h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.webinars-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.webinar-item {
+  background: white;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.webinar-item:hover {
+  box-shadow: 0 8px 16px rgba(22, 101, 52, 0.1);
+}
+
+.webinar-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dcfce7 0%, #a7f3d0 100%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 100px;
+}
+
+.webinar-date .month {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #166534;
+  text-transform: uppercase;
+}
+
+.webinar-date .day {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.webinar-details h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.webinar-details p {
+  margin-bottom: 0.75rem;
+  color: #4b5563;
+}
+
+/* Featured Course Section */
+.featured-course {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.featured-course h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.course-description {
+  background: #f0fdf4;
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+.course-description p {
+  color: #1f2937;
+}
+
+.course-description h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.25rem;
+}
+
+.course-topics {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.course-topics li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: #1f2937;
+}
+
+.course-topics li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.course-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  border: 1px solid #a7f3d0;
+}
+
+.highlight-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* CTA Section */
+.education-cta {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.education-cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.education-cta p {
+  font-size: 1.125rem;
+  color: #dcfce7;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.education-cta .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.education-cta .btn-primary:hover {
+  background-color: #dcfce7;
+}
+
+.education-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.education-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+
+  .webinar-item {
+    grid-template-columns: 1fr;
+  }
+
+  .webinar-date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .webinar-date .month,
+  .webinar-date .day {
+    text-align: center;
+  }
+
+  .course-content {
+    grid-template-columns: 1fr;
+  }
+
+  .course-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-hero {
+    padding: 2rem 1rem;
+  }
+
+  .education-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .resources-grid,
+  .upcoming-webinars,
+  .featured-course,
+  .education-cta {
+    padding: 2rem 1rem;
+  }
+
+  .resource-card {
+    padding: 1.5rem;
+  }
+
+  .webinar-item {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .course-description {
+    padding: 1.5rem;
+  }
+}/* Education Page Specific Styles */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.education-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-hero h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #dcfce7;
+  margin-bottom: 0;
+}
+
+/* Intro Section */
+.education-intro {
+  padding: 3rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.intro-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #1f2937;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Resources Grid */
+.resources-grid {
+  padding: 4rem 2rem;
+}
+
+.resources-grid h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card:hover {
+  box-shadow: 0 10px 25px rgba(22, 101, 52, 0.1);
+  border-color: #16a34a;
+  transform: translateY(-4px);
+}
+
+.resource-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.resource-card p {
+  flex-grow: 1;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.resource-link {
+  display: inline-block;
+  color: #16a34a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #15803d;
+  transform: translateX(4px);
+}
+
+/* Webinars Section */
+.upcoming-webinars {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+}
+
+.upcoming-webinars h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.webinars-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.webinar-item {
+  background: white;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.webinar-item:hover {
+  box-shadow: 0 8px 16px rgba(22, 101, 52, 0.1);
+}
+
+.webinar-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dcfce7 0%, #a7f3d0 100%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 100px;
+}
+
+.webinar-date .month {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #166534;
+  text-transform: uppercase;
+}
+
+.webinar-date .day {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.webinar-details h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.webinar-details p {
+  margin-bottom: 0.75rem;
+  color: #4b5563;
+}
+
+/* Featured Course Section */
+.featured-course {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.featured-course h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.course-description {
+  background: #f0fdf4;
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+.course-description p {
+  color: #1f2937;
+}
+
+.course-description h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.25rem;
+}
+
+.course-topics {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.course-topics li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: #1f2937;
+}
+
+.course-topics li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.course-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  border: 1px solid #a7f3d0;
+}
+
+.highlight-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* CTA Section */
+.education-cta {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.education-cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.education-cta p {
+  font-size: 1.125rem;
+  color: #dcfce7;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.education-cta .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.education-cta .btn-primary:hover {
+  background-color: #dcfce7;
+}
+
+.education-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.education-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+
+  .webinar-item {
+    grid-template-columns: 1fr;
+  }
+
+  .webinar-date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .webinar-date .month,
+  .webinar-date .day {
+    text-align: center;
+  }
+
+  .course-content {
+    grid-template-columns: 1fr;
+  }
+
+  .course-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-hero {
+    padding: 2rem 1rem;
+  }
+
+  .education-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .resources-grid,
+  .upcoming-webinars,
+  .featured-course,
+  .education-cta {
+    padding: 2rem 1rem;
+  }
+
+  .resource-card {
+    padding: 1.5rem;
+  }
+
+  .webinar-item {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .course-description {
+    padding: 1.5rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><section class="education-hero">
+  <div class="hero-container">
+    <h1>Climate Education</h1>
+    <p class="hero-subtitle">Empower yourself and your community with climate science knowledge and actionable sustainability strategies.</p>
+  </div>
+</section>
+
+<section class="education-intro">
+  <div class="container">
+    <p class="intro-text">Understanding climate change is the first step toward meaningful action. At Green Horizon, we provide accessible, science-backed educational resources designed for everyone—from curious beginners to experienced community organizers. Our materials emphasize hope, urgency, and practical solutions.</p>
+  </div>
+</section>
+
+<section class="resources-grid">
+  <div class="container">
+    <h2>Learning Resources</h2>
+    <div class="resources-list">
+      <article class="resource-card">
+        <div class="resource-icon">📚</div>
+        <h3>Climate Science Fundamentals</h3>
+        <p>Master the science behind climate change with our comprehensive guides covering greenhouse gases, carbon cycles, and climate feedback mechanisms.</p>
+        <a href="#" class="resource-link">Explore →</a>
+      </article>
+      
+      <article class="resource-card">
+        <div class="resource-icon">🎥</div>
+        <h3>Webinar Series</h3>
+        <p>Join our monthly webinars featuring climate experts, community leaders, and sustainability practitioners sharing insights and best practices.</p>
+        <a href="#" class="resource-link">View Schedule →</a>
+      </article>
+      
+      <article class="resource-card">
+        <div class="resource-icon">🛠️</div>
+        <h3>Action Toolkits</h3>
+        <p>Practical guides and templates for starting local projects, organizing community events, and implementing sustainable practices in your area.</p>
+        <a href="#" class="resource-link">Get Toolkits →</a>
+      </article>
+      
+      <article class="resource-card">
+        <div class="resource-icon">📖</div>
+        <h3>Reading List</h3>
+        <p>Curated collection of books, papers, and articles on climate science, policy, justice, and solutions from leading researchers and thought leaders.</p>
+        <a href="#" class="resource-link">Browse Library →</a>
+      </article>
+      
+      <article class="resource-card">
+        <div class="resource-icon">🗺️</div>
+        <h3>Local Impact Stories</h3>
+        <p>Real-world examples of communities taking climate action. Learn from successful projects and adapt strategies to your local context.</p>
+        <a href="#" class="resource-link">Read Stories →</a>
+      </article>
+      
+      <article class="resource-card">
+        <div class="resource-icon">💡</div>
+        <h3>Policy & Advocacy</h3>
+        <p>Understanding climate policy, advocacy strategies, and how to engage with decision-makers to drive systemic change at all levels.</p>
+        <a href="#" class="resource-link">Learn More →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-webinars">
+  <div class="container">
+    <h2>Upcoming Webinars</h2>
+    <div class="webinars-list">
+      <div class="webinar-item">
+        <div class="webinar-date">
+          <span class="month">DEC</span>
+          <span class="day">15</span>
+        </div>
+        <div class="webinar-details">
+          <h3>Renewable Energy 101: Solutions for Communities</h3>
+          <p><strong>Presenter:</strong> Dr. Sarah Chen, Renewable Energy Institute</p>
+          <p>Learn how communities can transition to renewable energy with practical strategies, funding opportunities, and real-world case studies.</p>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+      
+      <div class="webinar-item">
+        <div class="webinar-date">
+          <span class="month">JAN</span>
+          <span class="day">12</span>
+        </div>
+        <div class="webinar-details">
+          <h3>Building Resilient Food Systems</h3>
+          <p><strong>Presenter:</strong> Marcus Williams, Sustainable Agriculture Coalition</p>
+          <p>Explore how local food systems strengthen community resilience while reducing carbon emissions and supporting farmers.</p>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+      
+      <div class="webinar-item">
+        <div class="webinar-date">
+          <span class="month">JAN</span>
+          <span class="day">26</span>
+        </div>
+        <div class="webinar-details">
+          <h3>Climate Justice & Equity in Transition</h3>
+          <p><strong>Presenter:</strong> Rashida Patel, Community Action Network</p>
+          <p>Understanding how climate action must center justice and ensure that transition benefits reach frontline and historically marginalized communities.</p>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-course">
+  <div class="container">
+    <h2>Featured: Climate Action Practitioner Course</h2>
+    <div class="course-content">
+      <div class="course-description">
+        <p>Our comprehensive 8-week online course equips community organizers, educators, and advocates with the knowledge and skills to lead climate action in their communities.</p>
+        <h3>What You'll Learn:</h3>
+        <ul class="course-topics">
+          <li>Climate science fundamentals and climate data literacy</li>
+          <li>Community organizing and stakeholder engagement strategies</li>
+          <li>Project design, implementation, and evaluation</li>
+          <li>Funding, grants, and financial sustainability</li>
+          <li>Communication strategies and storytelling for impact</li>
+          <li>Policy advocacy and systems change approaches</li>
+        </ul>
+        <p><strong>Next cohort starts:</strong> February 3, 2025</p>
+        <a href="#" class="btn btn-primary btn-large">Learn More & Enroll</a>
+      </div>
+      <div class="course-highlights">
+        <div class="highlight-box">
+          <p class="highlight-number">8 Weeks</p>
+          <p class="highlight-label">Self-paced, flexible schedule</p>
+        </div>
+        <div class="highlight-box">
+          <p class="highlight-number">40+ Hours</p>
+          <p class="highlight-label">Video lessons, readings, activities</p>
+        </div>
+        <div class="highlight-box">
+          <p class="highlight-number">1:1 Mentoring</p>
+          <p class="highlight-label">Guidance from experienced practitioners</p>
+        </div>
+        <div class="highlight-box">
+          <p class="highlight-number">Community</p>
+          <p class="highlight-label">Network with peers, ongoing support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="education-cta">
+  <div class="container">
+    <h2>Ready to Deepen Your Climate Knowledge?</h2>
+    <p>Whether you're starting your climate journey or scaling your impact, we have resources for you. Join our community of climate-conscious individuals and leaders.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary btn-large">Explore Resources</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary btn-large">Get Involved Locally</a>
+    </div>
+  </div>
+</section><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
