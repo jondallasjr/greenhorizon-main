@@ -1,0 +1,1365 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Get Involved</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Get Involved - Page CSS */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.get-involved-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #dcfce7;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #dcfce7;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Involvement Pathways */
+.involvement-pathways {
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.involvement-pathways h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.pathway-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pathway-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.pathway-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pathway-card h3 {
+  margin-bottom: 1rem;
+}
+
+.pathway-card p {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  padding: 4rem 2rem;
+}
+
+.volunteer-section h2 {
+  margin-bottom: 1rem;
+}
+
+.volunteer-section > .container > .section-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.opportunity-item {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+}
+
+.opportunity-item h4 {
+  color: #166534;
+  margin-bottom: 0.5rem;
+}
+
+.opportunity-item p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.commitment {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #15803d;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-top: 3rem;
+  border: 1px solid #a7f3d0;
+}
+
+.cta-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  margin-bottom: 1.5rem;
+  color: #166534;
+}
+
+/* Chapters Section */
+.chapters-section {
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.chapters-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chapters-section > .container > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: #4b5563;
+}
+
+.chapters-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.chapters-info h3 {
+  margin-bottom: 1rem;
+}
+
+.chapters-info ul {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+}
+
+.chapters-info ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4b5563;
+}
+
+.chapters-info ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.map-placeholder {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #4b5563;
+}
+
+.zip-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.zip-input:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+/* Community Voices */
+.community-voices-section {
+  padding: 4rem 2rem;
+}
+
+.community-voices-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #16a34a;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  color: #166534;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+  color: #166534;
+  margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.final-cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.final-cta-section > .container > p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #dcfce7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.final-cta-section .btn-secondary {
+  background-color: white;
+  border-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .chapters-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pathways-grid,
+  .opportunities-list,
+  .testimonials-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-section,
+  .involvement-pathways,
+  .chapters-section,
+  .community-voices-section,
+  .faq-section,
+  .final-cta-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .pathway-card,
+  .opportunity-item,
+  .testimonial-card,
+  .faq-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .cta-box {
+    padding: 1.5rem 1rem;
+  }
+}.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.get-involved-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #dcfce7;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #dcfce7;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Involvement Pathways */
+.involvement-pathways {
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.involvement-pathways h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.pathway-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pathway-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.pathway-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pathway-card h3 {
+  margin-bottom: 1rem;
+}
+
+.pathway-card p {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  padding: 4rem 2rem;
+}
+
+.volunteer-section h2 {
+  margin-bottom: 1rem;
+}
+
+.volunteer-section > .container > .section-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.opportunity-item {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-left: 4px solid #16a34a;
+  border-radius: 0.5rem;
+}
+
+.opportunity-item h4 {
+  color: #166534;
+  margin-bottom: 0.5rem;
+}
+
+.opportunity-item p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.commitment {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #15803d;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-top: 3rem;
+  border: 1px solid #a7f3d0;
+}
+
+.cta-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  margin-bottom: 1.5rem;
+  color: #166534;
+}
+
+/* Chapters Section */
+.chapters-section {
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.chapters-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chapters-section > .container > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: #4b5563;
+}
+
+.chapters-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.chapters-info h3 {
+  margin-bottom: 1rem;
+}
+
+.chapters-info ul {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+}
+
+.chapters-info ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4b5563;
+}
+
+.chapters-info ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.map-placeholder {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #4b5563;
+}
+
+.zip-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.zip-input:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+/* Community Voices */
+.community-voices-section {
+  padding: 4rem 2rem;
+}
+
+.community-voices-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #16a34a;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  color: #166534;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+  color: #166534;
+  margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.final-cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.final-cta-section > .container > p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #dcfce7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.final-cta-section .btn-secondary {
+  background-color: white;
+  border-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .chapters-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pathways-grid,
+  .opportunities-list,
+  .testimonials-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-section,
+  .involvement-pathways,
+  .chapters-section,
+  .community-voices-section,
+  .faq-section,
+  .final-cta-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .pathway-card,
+  .opportunity-item,
+  .testimonial-card,
+  .faq-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .cta-box {
+    padding: 1.5rem 1rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><section class="get-involved-hero">
+  <div class="hero-content">
+    <h1>Get Involved</h1>
+    <p class="hero-subtitle">Join a growing movement of climate-conscious community members taking meaningful action. Whether you have hours or expertise, there's a role for you.</p>
+  </div>
+</section>
+
+<section class="involvement-pathways">
+  <div class="container">
+    <h2>Multiple Ways to Make an Impact</h2>
+    <div class="pathways-grid">
+      <div class="pathway-card">
+        <div class="pathway-icon">🤝</div>
+        <h3>Volunteer</h3>
+        <p>Join project teams, lead community workshops, support local chapters, or help with events. Flexible commitments from a few hours to ongoing roles.</p>
+        <a href="#volunteer-form" class="btn btn-primary">Explore Volunteer Roles</a>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-icon">💚</div>
+        <h3>Donate</h3>
+        <p>Direct support funds local climate projects, educational programs, and community organizing. Every contribution strengthens climate action in your region.</p>
+        <a href="/greenhorizon-main/donate" class="btn btn-primary">Make a Donation</a>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-icon">🤲</div>
+        <h3>Partner with Us</h3>
+        <p>Organizations, schools, and businesses can collaborate on co-branded initiatives, host projects, or integrate climate education into your programs.</p>
+        <a href="/greenhorizon-main/contact" class="btn btn-primary">Start a Partnership</a>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-icon">📍</div>
+        <h3>Join a Local Chapter</h3>
+        <p>Find or start a Green Horizon chapter in your community. Connect with organizers, participate in regular meetings, and lead neighborhood climate action.</p>
+        <a href="#local-chapters" class="btn btn-primary">Find Your Chapter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="volunteer-section">
+  <div class="container">
+    <div class="section-content">
+      <h2 id="volunteer-form">Volunteer Opportunities</h2>
+      <p>We're building a network of passionate volunteers across multiple regions. Here are some current opportunities:</p>
+      <div class="opportunities-list">
+        <div class="opportunity-item">
+          <h4>Project Team Members</h4>
+          <p>Hands-on roles in local projects: community gardens, renewable energy installations, waste reduction initiatives, and more. Flexible scheduling, training provided.</p>
+          <span class="commitment">2-4 hours/week</span>
+        </div>
+        <div class="opportunity-item">
+          <h4>Workshop Facilitators</h4>
+          <p>Lead educational sessions on climate topics, sustainable living, community organizing, or environmental justice. We provide materials and support.</p>
+          <span class="commitment">4-8 hours/month</span>
+        </div>
+        <div class="opportunity-item">
+          <h4>Community Organizers</h4>
+          <p>Build momentum in your neighborhood. Recruit members, organize events, coordinate local campaigns, and connect residents to climate action.</p>
+          <span class="commitment">5-10 hours/week</span>
+        </div>
+        <div class="opportunity-item">
+          <h4>Event Support</h4>
+          <p>Help coordinate fundraisers, community gatherings, and educational events. Setup, logistics, outreach, and coordination roles available.</p>
+          <span class="commitment">3-6 hours/event</span>
+        </div>
+        <div class="opportunity-item">
+          <h4>Communications & Social Media</h4>
+          <p>Share stories, manage social channels, write newsletters, or help with video/photo documentation. Remote-friendly roles with flexible schedules.</p>
+          <span class="commitment">3-6 hours/week</span>
+        </div>
+        <div class="opportunity-item">
+          <h4>Professional Expertise</h4>
+          <p>Engineers, designers, grant writers, accountants—we need skilled volunteers for strategic projects. One-off consulting or ongoing support available.</p>
+          <span class="commitment">Flexible</span>
+        </div>
+      </div>
+      <div class="cta-box">
+        <h3>Ready to Volunteer?</h3>
+        <p>Fill out our volunteer interest form and we'll match you with opportunities that fit your skills, location, and availability.</p>
+        <button class="btn btn-primary btn-large">Start Your Volunteer Application</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapters-section">
+  <div class="container">
+    <h2 id="local-chapters">Local Chapters</h2>
+    <p>Green Horizon chapters are community-led hubs for climate action. Members organize projects, share resources, and build neighborhood power together.</p>
+    <div class="chapters-content">
+      <div class="chapters-info">
+        <h3>What's a Local Chapter?</h3>
+        <p>A chapter is a grassroots group of Green Horizon members in your area who meet regularly to:</p>
+        <ul>
+          <li>Plan and launch local climate projects</li>
+          <li>Share knowledge and best practices</li>
+          <li>Connect with other organizers and community members</li>
+          <li>Advocate for local environmental policies</li>
+          <li>Build community resilience and relationships</li>
+        </ul>
+        <p><strong>No prior experience needed.</strong> We provide organizing training, resources, and ongoing support.</p>
+      </div>
+      <div class="chapters-map">
+        <div class="map-placeholder">
+          <p>📍 Interactive map of chapters coming soon</p>
+          <p style="font-size: 0.9rem; margin-top: 1rem;">In the meantime, enter your zip code to find nearby chapters or express interest in starting one:</p>
+          <div style="margin-top: 1rem;">
+            <input type="text" placeholder="Enter your zip code" class="zip-input" />
+            <button class="btn btn-secondary" style="margin-top: 0.5rem;">Find Chapter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="community-voices-section">
+  <div class="container">
+    <h2>Community Voices</h2>
+    <p class="section-intro">Hear from people already making a difference:</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Green Horizon didn't just give us a grant—they gave us confidence. Now our neighborhood has a thriving tool library and repair cafe."</p>
+        <p class="testimonial-author">— Jerome Williams, Detroit Tool Share</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"They met us where we were. No jargon, no judgment, just genuine support for our community solar project."</p>
+        <p class="testimonial-author">— Luz Hernandez, Phoenix Rising Co-op</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Five years ago, I didn't know where to start. Green Horizon's training program turned me into a climate organizer. Now I'm helping other neighborhoods do the same."</p>
+        <p class="testimonial-author">— Aisha Patel, Oakland Community Climate Hub</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>Do I need climate or organizing experience?</h4>
+        <p>No. We welcome people from all backgrounds. Training, mentorship, and resources are provided. Your passion and willingness to learn matter most.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I volunteer remotely?</h4>
+        <p>Yes. We have remote roles in communications, fundraising, and research. Many in-person roles also have flexible scheduling options.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What's the time commitment?</h4>
+        <p>It's flexible. Some roles require 2-3 hours monthly; others are 10+ hours weekly. You choose what works for your life.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do donations make an impact?</h4>
+        <p>Every dollar funds projects in underserved communities, educational programs, organizer training, and capacity building. See our <a href="/greenhorizon-main/transparency">transparency report</a> for details.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can my organization partner with Green Horizon?</h4>
+        <p>Absolutely. We collaborate with nonprofits, schools, businesses, and government agencies. <a href="/greenhorizon-main/contact">Contact us</a> to discuss possibilities.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do I start or join a local chapter?</h4>
+        <p>Use our chapter finder above to search by location. If no chapter exists, we'll support you in starting one. Either way, we'll connect you with organizers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta-section">
+  <div class="container">
+    <h2>Take Your First Step</h2>
+    <p>Climate action doesn't require perfection—it requires commitment. We're here to support you every step of the way.</p>
+    <div class="cta-buttons">
+      <a href="#volunteer-form" class="btn btn-primary btn-large">Become a Volunteer</a>
+      <a href="/greenhorizon-main/donate" class="btn btn-secondary btn-large">Make a Donation</a>
+      <a href="/greenhorizon-main/contact" class="btn btn-secondary btn-large">Contact Us</a>
+    </div>
+  </div>
+</section><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
