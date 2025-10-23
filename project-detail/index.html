@@ -1,0 +1,1856 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Project Details</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Project Details - Page CSS */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Project Hero Section */
+.project-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-category {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a7f3d0;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Project Overview Section */
+.project-overview {
+  padding: 3rem 2rem;
+  background-color: #f8fdfb;
+  margin-bottom: 3rem;
+}
+
+.overview-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 3rem;
+}
+
+.overview-main h2 {
+  margin-bottom: 1.5rem;
+}
+
+.overview-main p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.overview-main h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goals-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: #374151;
+}
+
+.goals-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.info-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h4 {
+  margin-bottom: 1rem;
+  color: #166534;
+}
+
+.info-card dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.info-card dt {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.info-card dd {
+  color: #6b7280;
+  margin: 0;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-list li {
+  padding: 0.5rem 0;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.impact-list li:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Timeline Section */
+.project-timeline {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-timeline h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: #dcfce7;
+  top: 0;
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.timeline-marker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid #16a34a;
+}
+
+.timeline-item:nth-child(odd) .timeline-marker {
+  justify-self: end;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+  justify-self: start;
+}
+
+.timeline-content h4 {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+/* Community Voices Section */
+.community-voices {
+  padding: 3rem 2rem;
+  background-color: #f0fdf4;
+  margin-bottom: 3rem;
+}
+
+.community-voices h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonials-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #16a34a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #166534;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-role {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Project Involvement Section */
+.project-involvement {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-involvement h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.involvement-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.involvement-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.involvement-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #16a34a;
+}
+
+.involvement-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.involvement-card h3 {
+  margin-bottom: 1rem;
+}
+
+.involvement-card p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Impact Section */
+.project-impact {
+  padding: 3rem 2rem;
+  background-color: #f8fdfb;
+  margin-bottom: 3rem;
+}
+
+.project-impact h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.impact-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.impact-metric {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+}
+
+.impact-metric h4 {
+  margin-bottom: 1rem;
+  color: #166534;
+}
+
+.impact-metric ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-metric li {
+  padding: 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.impact-metric li:last-child {
+  border-bottom: none;
+}
+
+.impact-metric a {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.project-cta {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.project-cta .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.project-cta .btn-primary:hover {
+  background-color: #dcfce7;
+}
+
+.project-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.project-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline:before {
+    left: 2rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+  }
+
+  .timeline-marker {
+    justify-self: start;
+    text-align: center;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .project-overview,
+  .project-timeline,
+  .community-voices,
+  .project-involvement,
+  .project-impact {
+    padding: 2rem 1.5rem;
+  }
+
+  .involvement-card,
+  .impact-metric,
+  .info-card,
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-lg {
+    width: 100%;
+  }
+
+  .overview-main h2,
+  .project-timeline h2,
+  .community-voices h2,
+  .project-involvement h2,
+  .project-impact h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .stat-box {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .involvement-grid,
+  .impact-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+}.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Project Hero Section */
+.project-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-category {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a7f3d0;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Project Overview Section */
+.project-overview {
+  padding: 3rem 2rem;
+  background-color: #f8fdfb;
+  margin-bottom: 3rem;
+}
+
+.overview-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 3rem;
+}
+
+.overview-main h2 {
+  margin-bottom: 1.5rem;
+}
+
+.overview-main p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.overview-main h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goals-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: #374151;
+}
+
+.goals-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.info-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h4 {
+  margin-bottom: 1rem;
+  color: #166534;
+}
+
+.info-card dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.info-card dt {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.info-card dd {
+  color: #6b7280;
+  margin: 0;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-list li {
+  padding: 0.5rem 0;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.impact-list li:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Timeline Section */
+.project-timeline {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-timeline h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: #dcfce7;
+  top: 0;
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.timeline-marker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid #16a34a;
+}
+
+.timeline-item:nth-child(odd) .timeline-marker {
+  justify-self: end;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+  justify-self: start;
+}
+
+.timeline-content h4 {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+/* Community Voices Section */
+.community-voices {
+  padding: 3rem 2rem;
+  background-color: #f0fdf4;
+  margin-bottom: 3rem;
+}
+
+.community-voices h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonials-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #16a34a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #166534;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-role {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Project Involvement Section */
+.project-involvement {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-involvement h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.involvement-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.involvement-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.involvement-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #16a34a;
+}
+
+.involvement-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.involvement-card h3 {
+  margin-bottom: 1rem;
+}
+
+.involvement-card p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Impact Section */
+.project-impact {
+  padding: 3rem 2rem;
+  background-color: #f8fdfb;
+  margin-bottom: 3rem;
+}
+
+.project-impact h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.impact-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.impact-metric {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcfce7;
+}
+
+.impact-metric h4 {
+  margin-bottom: 1rem;
+  color: #166534;
+}
+
+.impact-metric ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-metric li {
+  padding: 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.impact-metric li:last-child {
+  border-bottom: none;
+}
+
+.impact-metric a {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.project-cta {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #166534;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.project-cta .btn-primary {
+  background-color: white;
+  color: #166534;
+}
+
+.project-cta .btn-primary:hover {
+  background-color: #dcfce7;
+}
+
+.project-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.project-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline:before {
+    left: 2rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+  }
+
+  .timeline-marker {
+    justify-self: start;
+    text-align: center;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .project-overview,
+  .project-timeline,
+  .community-voices,
+  .project-involvement,
+  .project-impact {
+    padding: 2rem 1.5rem;
+  }
+
+  .involvement-card,
+  .impact-metric,
+  .info-card,
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-lg {
+    width: 100%;
+  }
+
+  .overview-main h2,
+  .project-timeline h2,
+  .community-voices h2,
+  .project-involvement h2,
+  .project-impact h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .stat-box {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .involvement-grid,
+  .impact-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><main class="project-detail">
+  <section class="project-hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="project-category">Community Solar</span>
+        <h1>Phoenix Rising Community Solar</h1>
+        <p class="project-subtitle">Bringing affordable renewable energy to underserved neighborhoods in Phoenix, Arizona</p>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-number">847</span>
+            <span class="stat-label">Households Served</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">2.4 MW</span>
+            <span class="stat-label">Installed Capacity</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">$340K</span>
+            <span class="stat-label">Annual Savings</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">📷 Project Image</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-main">
+          <h2>About This Project</h2>
+          <p>Phoenix Rising Community Solar is a collaborative effort to deploy solar energy infrastructure in five underserved neighborhoods across Phoenix. This project directly addresses energy inequity by making clean energy accessible and affordable to low-income households that have historically been excluded from renewable energy benefits.</p>
+          <p>Through partnerships with community organizations, local government, and private investors, we've installed rooftop and ground-mounted solar arrays that generate electricity for participating households at rates 15-20% below current grid prices.</p>
+
+          <h3>Project Goals</h3>
+          <ul class="goals-list">
+            <li>Provide clean, affordable energy to 1,000+ households by 2026</li>
+            <li>Create 50+ local jobs in solar installation and maintenance</li>
+            <li>Reduce community carbon emissions by 5,000 metric tons annually</li>
+            <li>Build energy literacy and climate leadership among participants</li>
+            <li>Demonstrate replicable model for other cities and regions</li>
+          </ul>
+        </div>
+        <aside class="overview-sidebar">
+          <div class="info-card">
+            <h4>Quick Facts</h4>
+            <dl>
+              <dt>Location:</dt>
+              <dd>Phoenix, Arizona</dd>
+              <dt>Status:</dt>
+              <dd><span class="badge badge-active">Active</span></dd>
+              <dt>Launch Date:</dt>
+              <dd>January 2023</dd>
+              <dt>Project Lead:</dt>
+              <dd>Sarah Chen, Director</dd>
+              <dt>Partners:</dt>
+              <dd>City of Phoenix, AZ Solar Alliance, Local Credit Union</dd>
+            </dl>
+          </div>
+          <div class="info-card">
+            <h4>Impact So Far</h4>
+            <ul class="impact-list">
+              <li>847 households connected</li>
+              <li>12,400 tons CO₂ avoided</li>
+              <li>$2.1M invested locally</li>
+              <li>42 jobs created</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-timeline">
+    <div class="container">
+      <h2>Project Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">2022</div>
+          <div class="timeline-content">
+            <h4>Planning & Community Engagement</h4>
+            <p>Conducted 12 community listening sessions, surveyed 500+ households, and secured initial $800K in grant funding.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Early 2023</div>
+          <div class="timeline-content">
+            <h4>Installation Phase 1</h4>
+            <p>Completed rooftop installations on 300 homes. Created 25 local solar technician jobs through training partnership.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Mid 2023</div>
+          <div class="timeline-content">
+            <h4>Installation Phase 2 & Launch</h4>
+            <p>Deployed ground-mounted arrays in public spaces. First cohort of 500 households began receiving solar benefits.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2024</div>
+          <div class="timeline-content">
+            <h4>Expansion & Optimization</h4>
+            <p>Reached 847 households. Launched monthly community education workshops on energy efficiency and climate action.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2025-2026</div>
+          <div class="timeline-content">
+            <h4>Scale to 1,000+ Households</h4>
+            <p>Planning phase: Additional neighborhoods, expanded job training, replicability documentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="community-voices">
+    <div class="container">
+      <h2>Community Voices</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"They met us where we were. No jargon, no judgment, just genuine support for our community solar project."</p>
+          <p class="testimonial-author">— Luz Hernandez<br><span class="testimonial-role">Organizer, Phoenix Rising Co-op</span></p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"I was skeptical at first, but the process was transparent. Now my energy bill is lower and I know I'm helping the planet."</p>
+          <p class="testimonial-author">— Marcus Thompson<br><span class="testimonial-role">Participant, South Phoenix</span></p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Green Horizon's training program prepared me for this job. I'm proud to be installing clean energy in my own community."</p>
+          <p class="testimonial-author">— David Ortiz<br><span class="testimonial-role">Solar Technician, Project Employee</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-involvement">
+    <div class="container">
+      <h2>Get Involved</h2>
+      <div class="involvement-grid">
+        <div class="involvement-card">
+          <div class="involvement-icon">🤝</div>
+          <h3>Volunteer</h3>
+          <p>Join installation teams, lead community workshops, or help with administrative support. No experience necessary.</p>
+          <a href="/greenhorizon-main/get-involved?project=phoenix-solar" class="btn btn-secondary">Sign Up to Volunteer</a>
+        </div>
+        <div class="involvement-card">
+          <div class="involvement-icon">💰</div>
+          <h3>Donate</h3>
+          <p>Fund installations, job training programs, or operational costs. Every dollar helps expand access to clean energy.</p>
+          <a href="/greenhorizon-main/donate?project=phoenix-solar" class="btn btn-primary">Donate Now</a>
+        </div>
+        <div class="involvement-card">
+          <div class="involvement-icon">🤝</div>
+          <h3>Partner</h3>
+          <p>Organizations: explore partnership opportunities in fundraising, community organizing, or technical support.</p>
+          <a href="/greenhorizon-main/contact?inquiry=partnership&project=phoenix-solar" class="btn btn-secondary">Get in Touch</a>
+        </div>
+        <div class="involvement-card">
+          <div class="involvement-icon">🏠</div>
+          <h3>Participate</h3>
+          <p>Live in Phoenix and interested in solar? Check eligibility and apply for the program in your neighborhood.</p>
+          <a href="/greenhorizon-main/projects/phoenix-solar-apply" class="btn btn-secondary">Learn & Apply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-impact">
+    <div class="container">
+      <h2>Measuring Impact</h2>
+      <div class="impact-grid">
+        <div class="impact-metric">
+          <h4>Environmental</h4>
+          <ul>
+            <li>12,400 metric tons CO₂ emissions avoided</li>
+            <li>Equivalent to taking 2,680 cars off the road for one year</li>
+            <li>On track for 62,000 tons cumulative by 2026</li>
+          </ul>
+        </div>
+        <div class="impact-metric">
+          <h4>Economic</h4>
+          <ul>
+            <li>$2.1M invested in local Phoenix economy</li>
+            <li>$340K annual household savings collectively</li>
+            <li>42 jobs created; $1.8M in wages paid</li>
+          </ul>
+        </div>
+        <div class="impact-metric">
+          <h4>Social</h4>
+          <ul>
+            <li>847 households with increased energy security</li>
+            <li>85% participation rate in community education</li>
+            <li>5 community leaders trained as climate ambassadors</li>
+          </ul>
+        </div>
+        <div class="impact-metric">
+          <h4>Transparency</h4>
+          <ul>
+            <li>Monthly impact reports published</li>
+            <li>Independent audit completed annually</li>
+            <li><a href="/greenhorizon-main/transparency">Full financials available online</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Power Change?</h2>
+        <p>Whether you want to volunteer, donate, partner, or learn more, we'd love to hear from you. Together, we're building an energy system that works for everyone.</p>
+        <div class="cta-buttons">
+          <a href="/greenhorizon-main/get-involved" class="btn btn-primary btn-lg">Get Involved</a>
+          <a href="/greenhorizon-main/donate?project=phoenix-solar" class="btn btn-secondary btn-lg">Make a Donation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
