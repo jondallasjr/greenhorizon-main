@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Our Projects</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #166534;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #166534;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #166534;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #166534;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #15803d;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a:hover {
+  color: #15803d;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.35rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #166534;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: white;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.site-nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #16a34a;
+  border-bottom-color: #16a34a;
+}
+
+.nav-donate {
+  background-color: #16a34a;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.nav-donate:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #166534;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #dcfce7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+  color: #a7f3d0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #dcfce7;
+}
+
+.footer-section a:hover {
+  color: #a7f3d0;
+}
+
+.footer-section .btn {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #dcfce7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dcfce7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 2rem;
+  }
+
+  .site-nav a {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav ul {
+    padding: 0.75rem 1rem;
+  }
+}
+/* Our Projects - Page CSS */
+.projects-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #dcfce7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+.projects-controls {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.filter-group select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: #1f2937;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(22, 101, 52, 0.1);
+  border-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.project-header h3 a {
+  color: #166534;
+  font-size: 1.25rem;
+}
+
+.project-header h3 a:hover {
+  color: #15803d;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-status.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.project-status.planning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.project-status.completed {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.project-description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 0.5rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  color: #166534;
+  font-weight: 700;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #dcfce7;
+}
+
+.community-involved {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.project-action {
+  color: #16a34a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-action:hover {
+  color: #15803d;
+}
+
+.projects-info {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid #16a34a;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projects-info h2 {
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.projects-info p {
+  color: #1f2937;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+@media (max-width: 768px) {
+  .projects-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .projects-controls {
+    flex-direction: column;
+  }
+
+  .search-box {
+    min-width: auto;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .info-buttons {
+    flex-direction: column;
+  }
+
+  .info-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 0 1rem 2rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-status {
+    align-self: flex-start;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}.projects-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #dcfce7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+.projects-controls {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.filter-group select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #dcfce7;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: #1f2937;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #dcfce7;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(22, 101, 52, 0.1);
+  border-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.project-header h3 a {
+  color: #166534;
+  font-size: 1.25rem;
+}
+
+.project-header h3 a:hover {
+  color: #15803d;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-status.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.project-status.planning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.project-status.completed {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.project-description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 0.5rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  color: #166534;
+  font-weight: 700;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #dcfce7;
+}
+
+.community-involved {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.project-action {
+  color: #16a34a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-action:hover {
+  color: #15803d;
+}
+
+.projects-info {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid #16a34a;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projects-info h2 {
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.projects-info p {
+  color: #1f2937;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+}
+
+@media (max-width: 768px) {
+  .projects-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .projects-controls {
+    flex-direction: column;
+  }
+
+  .search-box {
+    min-width: auto;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .info-buttons {
+    flex-direction: column;
+  }
+
+  .info-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 0 1rem 2rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-status {
+    align-self: flex-start;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/greenhorizon-main/">🌍 Green Horizon</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul>
+    <li><a href="/greenhorizon-main/">Home</a></li>
+    <li><a href="/greenhorizon-main/about">About</a></li>
+    <li><a href="/greenhorizon-main/projects">Projects</a></li>
+    <li><a href="/greenhorizon-main/education">Education</a></li>
+    <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+    <li><a href="/greenhorizon-main/impact">Impact</a></li>
+    <li><a href="/greenhorizon-main/news">News</a></li>
+    <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+    <li><a href="/greenhorizon-main/contact">Contact</a></li>
+    <li><a href="/greenhorizon-main/donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav><section class="projects-hero">
+  <div class="hero-content">
+    <h1>Our Climate Projects</h1>
+    <p class="hero-subtitle">Active local initiatives making measurable environmental impact across our communities.</p>
+  </div>
+</section>
+
+<section class="projects-container">
+  <div class="projects-controls">
+    <div class="search-box">
+      <input type="text" id="project-search" placeholder="Search projects..." aria-label="Search projects">
+      <span class="search-icon">🔍</span>
+    </div>
+    <div class="filter-group">
+      <label for="status-filter">Filter by Status:</label>
+      <select id="status-filter" aria-label="Filter projects by status">
+        <option value="">All Projects</option>
+        <option value="active">Active</option>
+        <option value="planning">Planning</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="projects-grid" id="projects-grid">
+    <article class="project-card" data-status="active">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Urban Forest Initiative</a></h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">Planting native trees across 15 city neighborhoods to increase urban canopy coverage and reduce heat island effect.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">Trees Planted</span>
+          <span class="metric-value">3,247</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">CO₂ Offset/Year</span>
+          <span class="metric-value">127 tons</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 1,240 volunteers</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Join →</a>
+      </div>
+    </article>
+
+    <article class="project-card" data-status="active">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Community Solar Network</a></h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">Developing shared solar installations to provide clean energy access to underserved neighborhoods and reduce energy costs.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">MW Generated</span>
+          <span class="metric-value">4.2</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Families Served</span>
+          <span class="metric-value">840</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 385 volunteers</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Join →</a>
+      </div>
+    </article>
+
+    <article class="project-card" data-status="active">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Watershed Restoration</a></h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">Removing invasive species and restoring native vegetation along 8 miles of urban streams to improve water quality and habitat.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">Miles Restored</span>
+          <span class="metric-value">3.5</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Species Protected</span>
+          <span class="metric-value">12</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 567 volunteers</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Join →</a>
+      </div>
+    </article>
+
+    <article class="project-card" data-status="active">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Climate Justice Education</a></h3>
+        <span class="project-status active">Active</span>
+      </div>
+      <p class="project-description">Empowering students and educators with curricula and resources to understand climate impacts on marginalized communities.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">Schools Reached</span>
+          <span class="metric-value">34</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Students Engaged</span>
+          <span class="metric-value">2,100+</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 220 volunteers</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Join →</a>
+      </div>
+    </article>
+
+    <article class="project-card" data-status="planning">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Green Transition Hub</a></h3>
+        <span class="project-status planning">Planning</span>
+      </div>
+      <p class="project-description">Creating a community center for renewable energy training, sustainable business incubation, and climate career pathways.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">Launch Date</span>
+          <span class="metric-value">Q3 2025</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Goal: Jobs Created</span>
+          <span class="metric-value">150</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 Volunteers needed</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Join →</a>
+      </div>
+    </article>
+
+    <article class="project-card" data-status="completed">
+      <div class="project-header">
+        <h3><a href="/greenhorizon-main/project-detail">Corporate Emissions Audit</a></h3>
+        <span class="project-status completed">Completed</span>
+      </div>
+      <p class="project-description">Conducted comprehensive carbon footprint analysis for 28 local businesses with customized decarbonization strategies.</p>
+      <div class="project-metrics">
+        <div class="metric">
+          <span class="metric-label">Businesses Audited</span>
+          <span class="metric-value">28</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Emissions Reduction</span>
+          <span class="metric-value">34%</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span class="community-involved">👥 156 volunteers</span>
+        <a href="/greenhorizon-main/get-involved" class="project-action">Learn More →</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="projects-info">
+    <h2>Get Involved</h2>
+    <p>Every project depends on passionate community members like you. Whether you want to volunteer, donate, or advocate for policy change, there's a way to contribute to climate action in your community.</p>
+    <div class="info-buttons">
+      <a href="/greenhorizon-main/get-involved" class="btn btn-primary">Explore Opportunities</a>
+      <a href="/greenhorizon-main/donate" class="btn btn-secondary">Support Our Work</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const searchInput = document.getElementById('project-search');
+  const statusFilter = document.getElementById('status-filter');
+  const projectsGrid = document.getElementById('projects-grid');
+  const projectCards = projectsGrid.querySelectorAll('.project-card');
+
+  function filterProjects() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedStatus = statusFilter.value;
+
+    projectCards.forEach(card => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      const description = card.querySelector('.project-description').textContent.toLowerCase();
+      const status = card.getAttribute('data-status');
+
+      const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+      const matchesStatus = !selectedStatus || status === selectedStatus;
+
+      card.style.display = matchesSearch && matchesStatus ? 'block' : 'none';
+    });
+  }
+
+  searchInput.addEventListener('input', filterProjects);
+  statusFilter.addEventListener('change', filterProjects);
+</script><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Green Horizon Foundation</h3>
+      <p>Mobilizing communities to take meaningful climate action through accessible local projects, education, and policy advocacy.</p>
+      <p class="footer-legal">501(c)(3) Nonprofit • EIN: 12-3456789</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/about">About Us</a></li>
+        <li><a href="/greenhorizon-main/projects">Projects</a></li>
+        <li><a href="/greenhorizon-main/get-involved">Get Involved</a></li>
+        <li><a href="/greenhorizon-main/education">Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/greenhorizon-main/impact">Our Impact</a></li>
+        <li><a href="/greenhorizon-main/transparency">Transparency</a></li>
+        <li><a href="/greenhorizon-main/news">News & Updates</a></li>
+        <li><a href="/greenhorizon-main/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Take Action</h4>
+      <a href="/greenhorizon-main/donate" class="btn btn-primary">Donate Now</a>
+      <a href="/greenhorizon-main/get-involved" class="btn btn-secondary" style="margin-top: 0.5rem;">Get Involved</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Horizon Foundation. All rights reserved.</p>
+  </div>
+</footer></body></html>
